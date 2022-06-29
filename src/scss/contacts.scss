@@ -1,0 +1,88 @@
+.contacts {
+   background: $secondary-color-6;
+
+   &__container {
+      padding: rem(80) 0 rem(155) 0;
+
+      @media (max-width: $mobile){
+         padding: rem(75) rem(15) rem(137) rem(15);
+      }
+   }
+
+   &__header {
+      margin-bottom: rem(80);
+
+      p {
+         @media (max-width: $mobile){
+            padding: 0 rem(30);
+         }
+      }
+   }
+
+   &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $mobile){
+         flex-direction: column;
+         gap: rem(30);
+      }
+   }
+}
+
+
+.contact-item {
+   padding: rem(50) rem(59);
+   background: $light-text-color;
+   text-align: center;
+
+   @media (max-width: $tablet){
+      padding: rem(25) rem(20);
+   }
+
+   &__icon {
+      margin-bottom: rem(15);
+   }
+
+   &__link {
+      font-weight: 700;
+      line-height: math.div(24, 14);
+      letter-spacing: rem(0.2);
+   }
+
+   &__title {
+      font-family: 'Martel';
+      font-weight: 700;
+      font-size: rem(16);
+      line-height: math.div(24, 16);
+      letter-spacing: rem(0.2);
+      margin: rem(15) 0 rem(25) 0;
+   }
+
+   &__btn {
+      padding: rem(10) rem(20);
+      border: rem(1) solid $primary-color;
+      border-radius: rem(5);
+      font-weight: 700;
+      line-height: math.div(24, 14);
+      letter-spacing: rem(0.2);
+      color: $primary-color;
+      transition: all 0.3s ease;
+
+      &:hover {
+         background-color: $primary-color;
+         color: $light-text-color;
+      }
+   }
+}
+
+.item-blue {
+   background: $dark-background-color;
+   padding: rem(80) rem(59);
+   color: $light-text-color;
+
+   @media (max-width: $tablet){
+      padding: rem(45) rem(20);
+   }
+}

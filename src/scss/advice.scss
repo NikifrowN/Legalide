@@ -1,0 +1,96 @@
+.advice {
+   background-color: $secondary-color-5;
+   
+   @media (max-width: $tablet) {
+      background-color: $secondary-color-6;
+   }
+   
+   &__container {
+      padding: rem(125) 0 rem(108) 0;
+
+      @media (max-width: $tablet) {
+         padding: rem(98) 0 rem(192) 0;
+      }
+   }
+
+   &__header {
+      h2{
+         @media (max-width: $mobile) {
+            padding: 0 rem(60);
+         }
+      }
+   
+      p {
+         @media (max-width: $mobile) {
+            padding: 0 rem(90);
+         }
+      }
+   }
+
+   &__cards {
+      display: flex;
+      justify-content: space-between;
+      margin-top: rem(45);
+
+      @media (max-width: $tablet) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         gap: rem(65);
+         justify-items: center;
+      }
+
+      @media (max-width: $mobile) {
+         display: flex;
+         flex-direction: column;
+         gap: rem(30);
+         align-items: center;
+         margin-top: rem(75);
+      }
+   }
+}
+
+.advice-cards {
+
+   &__card {
+      background-color: $light-text-color;
+      max-width: rem(230);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.5s ease;
+
+      &:hover {
+         transform: scale(1.2)
+      }
+   }
+}
+.advice-card {
+
+   &__header {
+      padding: rem(30);
+
+      h5 {
+         font-family: 'Martel';
+         font-weight: 700;
+         font-size: rem(16);
+         line-height: math.div(24, 16);
+         letter-spacing: rem(0.1);
+         margin-bottom: rem(15);
+      }
+
+      p {
+         line-height: math.div(20, 14);
+         letter-spacing: rem(0.2);
+         color: $second-text-color;
+      }
+   }
+
+   &__img {
+      max-width: rem(230);
+
+      img {
+         width: 100%;
+      }
+   }
+}

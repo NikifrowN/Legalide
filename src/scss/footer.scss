@@ -1,0 +1,145 @@
+.footer {
+
+   &__consultion {
+      background-color: $secondary-color-5;
+   }
+
+   &__contacts {
+      background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+   }
+
+   &__about {
+      background-color: $secondary-color-5;
+   }
+}
+.consultion {
+
+   &__container {
+      display: flex;
+      align-items: center;
+      padding: rem(40) 0;
+      gap: rem(400);
+
+      @media (max-width: $tablet){
+         justify-content: space-between;
+         gap: rem(0);
+      }
+
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         padding: rem(40) rem(100);
+         gap: rem(50);
+      }
+   }
+
+   &__text {
+      h3 {
+         font-family: 'Martel';
+         font-weight: 700;
+         font-size: rem(24);
+         line-height: math.div(32, 24);
+         letter-spacing: rem(0.1);
+         margin-bottom: rem(10);
+      }
+
+      p {
+         font-weight: 400;
+         line-height: math.div(20, 14);
+         letter-spacing: rem(0.2);
+         color: $second-text-color;
+      }
+   }
+
+   &__link {
+      background-color: $secondary-color-2;
+      border-radius: rem(5);
+      padding: rem(15) rem(40);
+      font-weight: 700;
+      line-height: math.div(28, 14);
+      letter-spacing: rem(0.2);
+      color: $light-text-color;
+
+      @media (max-width: $mobile) {
+         padding: rem(15) rem(65);
+      }
+   }
+}
+.footer-contacts {
+
+   &__container {
+      padding: rem(50) 0;
+      color: $light-text-color;
+      display: flex;
+      gap: rem(50);
+
+      @media (max-width: $tablet) {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+      }
+
+      @media (max-width: $mobile) {
+         display: flex;
+         flex-direction: column;
+         padding: rem(55) rem(88);
+         gap: rem(50);
+      }
+   }
+
+   &__column {
+      font-weight: 600;
+      line-height: math.div(24, 14);
+      letter-spacing: rem(0.2);
+
+      h5 {
+         font-family: 'Martel';
+         font-weight: 700;
+         font-size: rem(16);
+         line-height: math.div(24, 16);
+         letter-spacing: rem(0.1);
+         margin-bottom: rem(20);
+      }
+   }
+
+   &__link {
+      img {
+         margin-right: rem(10);
+      }
+
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+}
+.about {
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(25) 0;
+
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         padding: rem(25) rem(90) rem(111) rem(90);
+         gap: rem(50);
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      line-height: math.div(24, 14);
+      letter-spacing: rem(0.2);
+      color: $second-text-color; 
+   }
+
+   &__icons {
+      display: flex;
+      gap: rem(20);
+      align-items: center;
+
+      @media (max-width: $mobile) {
+         align-self: flex-start;
+      }
+   }
+}

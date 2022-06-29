@@ -1,0 +1,99 @@
+.main {
+   background-image: url('@img/main/cover.jpg');
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: rem(104);
+
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         gap: rem(90);
+         padding-top: rem(124);
+      }
+   }
+
+   &__image {
+      @media (max-width: $tablet) {
+         width: rem(700);
+      }
+
+      @media (max-width: $mobile) {
+         width: rem(377);
+      }
+
+      img {
+         width: 100%;
+      }
+   }
+}
+.main-content {
+
+   &__title {
+      font-family: 'Martel';
+      font-style: normal;
+      font-weight: 900;
+      font-size: rem(58);
+      line-height: math.div(65, 58);
+      letter-spacing: rem(0.2);
+      margin-bottom: rem(35);
+
+      @media (max-width: $tablet) {
+         font-size: rem(40);
+      }
+
+      @media (max-width: $mobile) {
+         font-weight: 700;
+         line-height: math.div(50, 40);
+         text-align: center;
+      }
+   }
+
+   &__text {
+      font-family: 'Montserrat';
+      color: $second-text-color;
+      font-size: rem(20);
+      line-height: math.div(30, 20);
+      letter-spacing: rem(0.2);
+      margin-bottom: rem(35);
+
+      @media (max-width: $mobile) {
+         text-align: center;
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      gap: rem(10);
+
+         @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+         }
+   }
+}
+.main-btns {
+   
+   &__link {
+      display: inline-block;
+      padding: rem(10) rem(36);
+      background: none;
+      border: rem(2) solid $secondary-color-2;
+      border-radius: 37px; 
+
+      color: $secondary-color-2;
+      font-weight: 700;
+      line-height: math.div(28, 14);
+      letter-spacing: rem(0.2);
+      transition: all 0.3s ease;
+
+      &:hover {
+         background: $secondary-color-2;
+         color: $light-text-color;
+      }
+   }
+}

@@ -1,0 +1,37 @@
+.whoweare__container {
+  padding: rem(100) 0 rem(143) 0;
+}
+.whoweare__header {
+  margin-bottom: rem(100);
+}
+.whoweare__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whoweare-media {
+  position: relative;
+}
+.whoweare-media__filter {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+  width: 100%;
+  height: 100%;
+}
+.whoweare-media__arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-top: rem(-30);
+  margin-left: rem(-25);
+  background: blue;
+}
+
+.whoweare-textblock__header {
+  text-align: left;
+}

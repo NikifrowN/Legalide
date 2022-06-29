@@ -1,0 +1,17 @@
+.text-block{
+   letter-spacing: rem(0.2);
+   text-align: center;
+
+   h2 {
+      font-family: 'Martel';
+      font-weight: 700;
+      font-size: rem(40);
+      line-height: math.div(50, 40);
+      margin-bottom: rem(10);
+   }
+
+   p{
+      line-height: math.div(20, 14);
+      color: $second-text-color;
+   }
+}
