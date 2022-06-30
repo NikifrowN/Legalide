@@ -58,6 +58,11 @@
       line-height: math.div(28, 14);
       letter-spacing: rem(0.2);
       color: $light-text-color;
+      transition: all 0.5s ease;
+
+      &:hover {
+         background-color: $primary-color;
+      }
 
       @media (max-width: $mobile) {
          padding: rem(15) rem(65);
@@ -104,6 +109,12 @@
    &__link {
       img {
          margin-right: rem(10);
+      }
+
+      transition: all 0.5s ease;
+
+      &:hover {
+         transform: scale(1.2)
       }
 
       &:not(:last-child) {

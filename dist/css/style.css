@@ -218,7 +218,7 @@ h6 {
 
 .main {
   background-image: url("../img/main/cover.jpg");
-  background-position: 0 0;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -229,9 +229,6 @@ h6 {
   padding-top: 6.5rem;
 }
 @media (max-width: 47.99875em) {
-  .main {
-    background-position: 50% 50%;
-  }
   .main__container {
     flex-direction: column;
     gap: 5.625rem;
@@ -604,10 +601,16 @@ h6 {
     gap: 3.75rem;
   }
 }
+.clients__item {
+  transition: all 0.5s ease;
+}
 @media (max-width: 47.99875em) {
   .clients__item {
     width: 9.375rem;
   }
+}
+.clients__item:hover {
+  transform: scale(1.2);
 }
 .clients__item img {
   width: 100%;
@@ -651,7 +654,7 @@ h6 {
   background: #F9F9F9;
   border: 0.0625rem solid #E6E6E6;
   border-radius: 0.3125rem 0 0 0.3125rem;
-  margin-right: -0.1875rem;
+  margin-right: -0.3125rem;
   width: 20.8125rem;
 }
 @media (max-width: 61.99875em) {
@@ -674,6 +677,10 @@ h6 {
   background: #D0A144;
   border: 0.0625rem solid #E6E6E6;
   border-radius: 0 0.3125rem 0.3125rem 0;
+  transition: all 0.5s ease;
+}
+.clients-sub__form button:hover {
+  background-color: #784F33;
 }
 
 .contacts {
@@ -810,6 +817,10 @@ h6 {
   line-height: 2;
   letter-spacing: 0.0125rem;
   color: #ffffff;
+  transition: all 0.5s ease;
+}
+.consultion__link:hover {
+  background-color: #D0A144;
 }
 @media (max-width: 47.99875em) {
   .consultion__link {
@@ -851,8 +862,14 @@ h6 {
   letter-spacing: 0.00625rem;
   margin-bottom: 1.25rem;
 }
+.footer-contacts__link {
+  transition: all 0.5s ease;
+}
 .footer-contacts__link img {
   margin-right: 0.625rem;
+}
+.footer-contacts__link:hover {
+  transform: scale(1.2);
 }
 .footer-contacts__link:not(:last-child) {
   margin-bottom: 0.625rem;

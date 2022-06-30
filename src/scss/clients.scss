@@ -51,6 +51,12 @@
 			width: rem(150);
 		}
 
+      transition: all 0.5s ease;
+
+      &:hover {
+         transform: scale(1.2)
+      }
+
       img{
          width: 100%;
       }
@@ -94,7 +100,7 @@
          background: $secondary-color-3;
          border: rem(1) solid #E6E6E6;
          border-radius: rem(5) 0 0 rem(5);
-         margin-right: rem(-3);
+         margin-right: rem(-5);
          width: rem(333);
 
          @media (max-width: $tablet) {
@@ -116,6 +122,11 @@
          background: $primary-color;
          border: rem(1) solid #E6E6E6;
          border-radius: 0 rem(5) rem(5) 0;
+         transition: all 0.5s ease;
+
+         &:hover {
+            background-color: $secondary-color-2;
+         }
       }
    }
 }
